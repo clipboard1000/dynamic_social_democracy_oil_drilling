@@ -1025,7 +1025,7 @@ for (let i = 0; i <= 100; i++) {
 }
 
 // all the initial advisors are centrists.
-Q.wels_advisor = 1; // Otto Wels
+Q.emma_rockwell_advisor = 1; // Emma Rockwell
 Q.muller_advisor = 1; // Hermann Müller
 Q.muller_dead = 0;
 // okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
