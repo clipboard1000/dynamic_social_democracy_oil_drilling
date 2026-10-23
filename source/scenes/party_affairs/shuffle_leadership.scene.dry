@@ -122,6 +122,18 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 # reformists
 
 
+
+@remove_emma_rockwell
+title: Remove Emma Rockwell
+view-if: emma_rockwell_advisor = 1
+tags: remove_advisor
+on-arrival: emma_rockwell_advisor = 0; reformist_dissent += 10; n_advisors -= 1
+go-to: rm_main_menu
+
+Emma has been removed as an advisor. The Reformist faction disapproves.
+
+
+
 @remove_severing
 title: Remove Severing
 view-if: severing_advisor = 1
@@ -438,6 +450,18 @@ tags: center_advisor
 Rudolf Breitscheid is now an advisor.
 
 # reformist
+
+@add_emma_rockwell
+title: Emma Rockwell
+subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+is-card: true
+card-image: emma_rockwell_advisor.jpg
+tags: reformist_advisor
+view-if: emma_rockwell_advisor = 0 and n_advisors < 3
+on-arrival: emma_rockwell_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
+go-to: advisor_menu
+
+Emma Rockwell is now an advisor.
 
 
 @add_severing
