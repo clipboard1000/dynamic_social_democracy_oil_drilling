@@ -85,11 +85,11 @@ Senate composition:
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
-Next Prussian election: [? if prussia_leader != "Papen" and prussia_leader != "Schleicher": [+ next_election_month_prussia : month +] [+ next_election_year_prussia +][? if rubicon:, Week [+ next_election_week_prussia +] ?] ?][? if prussia_leader == "Papen" or prussia_leader == "Schleicher": postponed indefinitely ?]
+Next Greenlandic election: [? if prussia_leader != "Papen" and prussia_leader != "Schleicher": [+ next_election_month_prussia : month +] [+ next_election_year_prussia +][? if rubicon:, Week [+ next_election_week_prussia +] ?] ?][? if prussia_leader == "Papen" or prussia_leader == "Schleicher": postponed indefinitely ?]
 
 = Economics
 
-Inflation: [+ inflation_2 +]%
+Carbon Emission Growth: [+ inflation_2 +]%
 
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
