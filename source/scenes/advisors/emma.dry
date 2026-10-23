@@ -1,7 +1,8 @@
 title: Emma Rockwell
 is-pinned-card: true
 tags: advisor, reformist
-card-image: emma rockwell advisor.png
+card-image:  
+img/portraits/emma.png
 view-if: emma_rockwell_advisor = 1
 new-page: true 
 
