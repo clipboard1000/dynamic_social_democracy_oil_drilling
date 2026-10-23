@@ -32,7 +32,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 2026;
+Q.year = 2027;
 Q.month = 1;
 Q.week = 0;
 Q.week_checked = 0;
