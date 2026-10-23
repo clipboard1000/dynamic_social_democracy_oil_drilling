@@ -121,7 +121,14 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 
 # reformists
 
+@remove_dr._nirav_ganesh
+title: Remove Dr. Nirav Ganesh
+view-if: ganesh_advisor = 1
+tags: remove_advisor
+on-arrival: ganesh_advisor = 0; reformist_dissent += 10; n_advisors -= 1
+go-to: rm_main_menu
 
+Ganesh has been removed as an advisor. The Reformist faction disapproves.
 
 @remove_emma_rockwell
 title: Remove Emma Rockwell
@@ -450,6 +457,18 @@ tags: center_advisor
 Rudolf Breitscheid is now an advisor.
 
 # reformist
+
+@add_dr._nirav_ganesh
+title: Dr. Nirav Ganesh
+subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+is-card: true
+card-image: img/portraits/ganesh.jpg
+tags: reformist_advisor
+view-if: ganesh_advisor = 0 and n_advisors < 3
+on-arrival: ganesh_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
+go-to: advisor_menu
+
+Dr. Nirav Ganesh is now an advisor.
 
 @add_emma_rockwell
 title: Emma Rockwell
