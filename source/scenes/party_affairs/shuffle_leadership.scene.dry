@@ -455,7 +455,7 @@ Rudolf Breitscheid is now an advisor.
 title: Emma Rockwell
 subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
 is-card: true
-card-image: emma_rockwell_advisor.jpg
+card-image: img/portraits/emma.png
 tags: reformist_advisor
 view-if: emma_rockwell_advisor = 0 and n_advisors < 3
 on-arrival: emma_rockwell_advisor = 1; n_advisors += 1; reformist_strength += 5; reformist_dissent -= 7
