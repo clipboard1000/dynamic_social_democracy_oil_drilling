@@ -2590,7 +2590,7 @@ max-cards: 4
 
 
 @party
-title: Party Affairs
+title: Company Activities
 card-image: img/globe.jpg
 is-deck: true
 
